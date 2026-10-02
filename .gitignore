@@ -1,0 +1,1067 @@
+# ============================================
+# 🤖 FinAgent AI — .gitignore
+# Multi-Agent Financial Intelligence Platform
+# ============================================
+
+# ============================================
+# 🐍 Python
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+pythonenv*
+
+# ============================================
+# 🔐 Environment Variables (CRITICAL!)
+# ============================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+*.env
+!.env.example
+
+# ============================================
+# 🗄️ Database Files
+# ============================================
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+database/*.db
+backend/database/*.db
+
+# ============================================
+# 📊 Logs
+# ============================================
+*.log
+logs/
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+backend/logs/
+frontend/logs/
+
+# ============================================
+# ⚛️ Node / React / Vite
+# ============================================
+node_modules/
+dist/
+dist-ssr/
+build/
+.vite/
+.cache/
+.parcel-cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+coverage/
+*.local
+.vite-inspect/
+
+# ============================================
+# 🧠 ML Models & Large Files
+# ============================================
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.pb
+*.onnx
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.model
+*.bin
+models/
+backend/ml/models/
+backend/models_saved/
+*.tflite
+
+# ============================================
+# 📁 Data & Temporary Files
+# ============================================
+uploads/
+tmp/
+temp/
+.cache/
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+
+# ============================================
+# 📄 Generated Reports
+# ============================================
+reports/generated/
+*.pdf
+!docs/**/*.pdf
+backend/reports/*.pdf
+backend/reports/*.csv
+exports/
+
+# ============================================
+# 💻 IDE & Editor
+# ============================================
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json.example
+.idea/
+*.iml
+*.ipr
+*.iws
+.sublime-project
+.sublime-workspace
+*.code-workspace
+.history/
+*.sublime-*
+
+# ============================================
+# 🖥️ OS Files
+# ============================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ============================================
+# 🧪 Testing & Coverage
+# ============================================
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+coverage.xml
+*.cover
+nosetests.xml
+.tox/
+.nox/
+
+# ============================================
+# 🚀 Deployment
+# ============================================
+.vercel
+.netlify
+.firebase/
+.heroku/
+Dockerfile.local
+docker-compose.override.yml
+
+# ============================================
+# 📦 Package Managers
+# ============================================
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+poetry.lock
+Pipfile.lock
+
+# ============================================
+# 🎨 Build Artifacts
+# ============================================
+*.tsbuildinfo
+.eslintcache
+.stylelintcache
+
+# ============================================
+# 🔧 Misc
+# ============================================
+*.pid
+*.seed
+*.pid.lock
+.cache/
+node_modules/
+jspm_packages/
+
+# ============================================
+# 🎯 Project Specific
+# ============================================
+# Keep these files (don't ignore)
+!.env.example
+!README.md
+!LICENSE
+!.gitignore
+!requirements.txt
+!package.json
+Financial AI Agents Project
+📄 Complete README.md File
+Bhai, ye complete README.md file hai. Copy karke apne project ke root folder mein README.md naam se save kar de.
+
+markdown
+# 🤖 FinAgent AI — Multi-Agent Financial Intelligence Platform
+
+> **An AI-powered financial analysis platform where 5 autonomous agents collaborate to deliver budgeting, forecasting, risk detection, compliance checks, and investment insights — all orchestrated intelligently.**
+
+[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://python.org)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-green.svg)](https://fastapi.tiangolo.com)
+[![React](https://img.shields.io/badge/React-18-61DAFB.svg)](https://reactjs.org)
+[![Gemini](https://img.shields.io/badge/Gemini-API-orange.svg)](https://ai.google.dev)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
+---
+
+## 🎬 What is FinAgent AI?
+
+**FinAgent AI** is a next-generation **Multi-Agent Financial Intelligence Platform** that simulates an entire finance team using AI. Instead of one monolithic model, it uses **5 specialized autonomous agents** that work together — just like a real finance department.
+
+Each agent has a **distinct role, domain expertise, and reasoning capability**, powered by **Google Gemini** and **Machine Learning models**. An **Orchestrator** coordinates them all to produce a unified financial intelligence report.
+
+---
+
+## 🧠 The 5 Autonomous Agents
+
+| # | Agent | Role | Tech Used |
+|---|-------|------|-----------|
+| 1️⃣ | **Budget Agent** | Allocates company budget across departments | Gemini + Rule Engine |
+| 2️⃣ | **Forecast Agent** | Predicts future revenue/expenses (3-6 months) | Prophet + Gemini |
+| 3️⃣ | **Risk Agent** | Detects anomalies & fraud in transactions | Isolation Forest + Gemini |
+| 4️⃣ | **Compliance Agent** | Checks GST/TDS/Tax rule violations | Rules Engine + Gemini |
+| 5️⃣ | **Investment Agent** | Suggests smart investment portfolios | Gemini + Portfolio Logic |
+
+### 🎼 Plus: The Orchestrator
+A master coordinator that **runs all 5 agents in parallel**, aggregates their outputs, and generates a **unified financial intelligence report**.
+
+---
+
+## ✨ Key Features
+
+- 🎯 **Multi-Agent Coordination** — 5 independent AI agents working in sync
+- 🧠 **Gemini-Powered Reasoning** — LLM for financial insights & explanations
+- 📊 **ML-Driven Anomaly Detection** — Isolation Forest for fraud detection
+- 📈 **Time-Series Forecasting** — Prophet model for revenue prediction
+- ⚖️ **Automated Compliance Checks** — GST, TDS, Income Tax validation
+- 💰 **Smart Investment Suggestions** — Risk-profiled portfolio recommendations
+- 🎨 **Beautiful React Dashboard** — Dark-themed, animated, responsive UI
+- 🗄️ **SQLite Database** — Zero-setup, CPU-friendly, persistent storage
+- 🔄 **Agent Orchestration** — Parallel execution with result aggregation
+- 📄 **Exportable Reports** — PDF/CSV download support
+- 🖥️ **CPU-Friendly** — Runs perfectly without GPU
+- 🔐 **JWT Auth** — Secure API access
+
+---
+
+## 🏗️ Architecture
+┌─────────────────────────────────────────────────┐
+│ React Frontend (UI) │
+│ Dashboard • Charts • Agent Chat │
+└────────────────────┬────────────────────────────┘
+│ REST API (Axios)
+▼
+┌─────────────────────────────────────────────────┐
+│ FastAPI Backend │
+│ ┌───────────────────────────────────────────┐ │
+│ │ 🎼 Agent Orchestrator │ │
+│ └───┬───────┬────────┬─────────┬────────────┘ │
+│ ▼ ▼ ▼ ▼ ▼ │
+│ [Budget][Forecast][Risk][Compliance][Invest] │
+│ │ │ │ │ │ │
+│ └───────┴────────┴─────────┴───────┘ │
+│ │ │
+│ ┌───────────┴───────────┐ │
+│ ▼ ▼ │
+│ [Gemini API] [ML Models] │
+│ (Reasoning) (Prophet, IF) │
+└────────────────────┬────────────────────────────┘
+▼
+┌──────────────┐
+│ SQLite DB │
+└──────────────┘
+
+text
+
+---
+
+## 🛠️ Tech Stack
+
+### Backend
+- **Python 3.10+**
+- **FastAPI** — Modern async web framework
+- **Uvicorn** — ASGI server
+- **SQLAlchemy** — ORM
+- **SQLite** — Lightweight database
+- **Google Gemini API** — LLM reasoning
+- **Pandas + NumPy** — Data processing
+- **Scikit-learn** — ML models
+- **Prophet** — Time-series forecasting
+- **Pydantic** — Data validation
+- **Python-JOSE** — JWT auth
+
+### Frontend
+- **React 18** — UI library
+- **Vite** — Build tool
+- **TailwindCSS** — Styling
+- **Framer Motion** — Animations
+- **Recharts** — Charts
+- **Axios** — HTTP client
+- **React Router** — Navigation
+- **Lucide React** — Icons
+
+### Database
+- **SQLite** — Zero-setup, CPU-friendly
+
+---
+
+## 📁 Project Structure
+financial-intelligence-platform/
+├── backend/
+│ ├── app/
+│ │ ├── agents/ # 🤖 5 AI Agents + Orchestrator
+│ │ ├── api/ # API routes
+│ │ ├── core/ # Config, security, prompts
+│ │ ├── ml/ # ML models (anomaly, forecast)
+│ │ ├── models/ # SQLAlchemy models
+│ │ ├── schemas/ # Pydantic schemas
+│ │ ├── services/ # Business logic
+│ │ └── utils/ # Helpers
+│ ├── database/ # DB init & seed
+│ ├── data/ # Sample datasets
+│ ├── tests/ # Unit tests
+│ ├── main.py
+│ └── requirements.txt
+│
+├── frontend/
+│ ├── src/
+│ │ ├── components/ # Reusable UI
+│ │ ├── pages/ # Route pages
+│ │ ├── services/ # API layer
+│ │ ├── hooks/ # Custom hooks
+│ │ ├── context/ # Global state
+│ │ └── utils/ # Helpers
+│ ├── package.json
+│ └── vite.config.js
+│
+├── database/ # SQL scripts
+├── docs/ # Documentation
+├── scripts/ # Utility scripts
+├── README.md
+├── LICENSE
+└── .gitignore
+
+text
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- **Python 3.10+** → [Download](https://www.python.org/downloads/)
+- **Node.js 18+** → [Download](https://nodejs.org/)
+- **Git** → [Download](https://git-scm.com/)
+- **Gemini API Key** → [Get free key](https://aistudio.google.com/app/apikey)
+
+---
+
+### 🔧 Backend Setup
+
+```bash
+# 1. Navigate to backend
+cd backend
+
+# 2. Create virtual environment
+python -m venv venv
+
+# 3. Activate venv
+# Windows:
+venv\Scripts\activate
+# Mac/Linux:
+source venv/bin/activate
+
+# 4. Install dependencies
+pip install -r requirements.txt
+
+# 5. Setup environment variables
+cp .env.example .env
+# Edit .env and add your GEMINI_API_KEY
+
+# 6. Initialize database
+python database/init_db.py
+
+# 7. Seed sample data
+python database/seed_data.py
+
+# 8. Run backend server
+uvicorn main:app --reload --port 8000
+Backend will run at: http://localhost:8000
+API Docs (Swagger): http://localhost:8000/docs
+
+🎨 Frontend Setup
+bash
+# 1. Open a NEW terminal and navigate to frontend
+cd frontend
+
+# 2. Install dependencies
+npm install
+
+# 3. Setup environment variables
+cp .env.example .env
+# Edit .env if needed (default API URL: http://localhost:8000)
+
+# 4. Run frontend
+npm run dev
+Frontend will run at: http://localhost:5173
+
+🔑 Environment Variables
+Backend .env
+env
+# Gemini API
+GEMINI_API_KEY=your_gemini_api_key_here
+
+# Database
+DATABASE_URL=sqlite:///./database/financial.db
+
+# JWT
+SECRET_KEY=your_super_secret_key_change_this
+ALGORITHM=HS256
+ACCESS_TOKEN_EXPIRE_MINUTES=60
+
+# Server
+BACKEND_HOST=0.0.0.0
+BACKEND_PORT=8000
+
+# CORS
+FRONTEND_URL=http://localhost:5173
+Frontend .env
+env
+VITE_API_URL=http://localhost:8000/api/v1
+📡 API Endpoints
+🤖 Agent Endpoints
+Method	Endpoint	Description
+POST	/api/v1/agents/budget	Run Budget Agent
+POST	/api/v1/agents/forecast	Run Forecast Agent
+POST	/api/v1/agents/risk	Run Risk Agent
+POST	/api/v1/agents/compliance	Run Compliance Agent
+POST	/api/v1/agents/investment	Run Investment Agent
+POST	/api/v1/orchestrate	🎼 Run ALL agents together
+💾 Data Endpoints
+Method	Endpoint	Description
+GET	/api/v1/transactions	List all transactions
+POST	/api/v1/transactions	Create transaction
+GET	/api/v1/companies	List companies
+GET	/api/v1/reports	List reports
+POST	/api/v1/reports/generate	Generate report
+🔐 Auth Endpoints
+Method	Endpoint	Description
+POST	/api/v1/auth/register	Register user
+POST	/api/v1/auth/login	Login (JWT)
+GET	/api/v1/auth/me	Current user
+🧪 Sample Workflow
+User Input: "Analyze Q4 2025 finances for TechCorp"
+
+Orchestrator triggers:
+
+Budget Agent → Allocates ₹50L across 6 departments
+
+Forecast Agent → Predicts Q1 2026 revenue: ₹1.2Cr ± 8%
+
+Risk Agent → Flags 3 anomalies (unusual transactions)
+
+Compliance Agent → Reports 2 GST filing issues
+
+Investment Agent → Suggests 4 investment options with ROI
+
+Output: Unified report + dashboard visualizations ✅
+
+📸 Screenshots
+🎯 Dashboard
+https://docs/screenshots/dashboard.png
+
+💰 Budget Agent
+https://docs/screenshots/budget.png
+
+📈 Forecast Agent
+https://docs/screenshots/forecast.png
+
+⚠️ Risk Analysis
+https://docs/screenshots/risk.png
+
+⚖️ Compliance
+https://docs/screenshots/compliance.png
+
+💼 Investment
+https://docs/screenshots/investment.png
+
+🧪 Testing
+Backend Tests
+bash
+cd backend
+pytest tests/ -v
+Frontend Tests
+bash
+cd frontend
+npm run test
+🎯 Use Cases
+📊 Startups — Automated financial planning without hiring a CFO
+
+🏢 SMEs — Budget optimization & compliance checks
+
+💼 Investors — AI-driven portfolio insights
+
+🎓 Learning — Demo of multi-agent AI architecture
+
+🔬 Research — Agent coordination & LLM reasoning
+
+🗺️ Roadmap
+☑ Core multi-agent architecture
+☑ Gemini API integration
+☑ ML anomaly detection (Isolation Forest)
+☑ Time-series forecasting (Prophet)
+☑ React dashboard with charts
+☑ JWT authentication
+☑ SQLite database with SQLAlchemy
+□ Voice-based agent interaction
+□ Multi-company support
+□ Real-time market data integration
+□ PDF report generation
+□ Docker deployment
+🤝 Contributing
+Contributions, issues, and feature requests are welcome!
+
+Fork the project
+
+Create your feature branch (git checkout -b feature/AmazingFeature)
+
+Commit your changes (git commit -m 'Add some AmazingFeature')
+
+Push to the branch (git push origin feature/AmazingFeature)
+
+Open a Pull Request
+
+📄 License
+This project is licensed under the MIT License — see the LICENSE file for details.
+
+👨‍💻 Author
+Vishakha
+
+🐙 GitHub: @vishakha2121
+
+💼 LinkedIn: Your LinkedIn
+
+📧 Email: your-email@gmail.com
+
+🙏 Acknowledgements
+Google Gemini API — LLM reasoning
+
+FastAPI — Backend framework
+
+React — Frontend library
+
+Prophet — Time-series forecasting
+
+Scikit-learn — ML models
+
+⭐ Show Your Support
+If you find this project useful, please star ⭐ the repo — it helps a lot!
+
+Built with ❤️ using FastAPI, React, and Google Gemini
+
+text
+
+---
+
+## 📝 Kaise Use Kare:
+
+### Option 1: Notepad Se
+```cmd
+cd C:\Users\YourName\Desktop\financial-intelligence-platform
+type nul > README.md
+notepad README.md
+Phir upar wala content copy-paste karo aur save karo (Ctrl + S).
+
+Option 2: VS Code Se (Best)
+cmd
+code README.md
+Phir paste karo aur save karo.
+
+⚠️ Important Notes:
+Screenshots: docs/screenshots/ folder mein screenshots daalne padenge. Abhi ke liye aap ye section comment kar sakti ho ya placeholder rakh sakti ho. Baad mein jab project chalega, screenshots leke daal dena.
+
+Apna Email/LinkedIn: your-email@gmail.com aur LinkedIn URL apne se replace karo.
+
+Repo URL: Author section mein vishakha2121 already sahi hai ✅
+
+License File: LICENSE file bhi banani padegi. Chahiye to bata, wo bhi de dunga.
+
+.env.example file bhi chahiye hogi — bata de to wo bhi de dunga.
+
+🎯 Ab Kya Karna:
+✅ README.md file banao aur ye content paste karo
+
+✅ Save karo
+
+✅ git add . → git commit → git push
+
+✅ GitHub pe refresh karke dekho — README beautifully render hoga! 🎉
+
+Bhai, ab bata:
+
+LICENSE file chahiye? (MIT license text)
+
+.env.example file chahiye?
+
+Screenshots nahi hain to placeholder laga dun?
+
+Actual code banana shuru karein? (Backend se shuru karein?)
+
+Bata, main aage badhta hoon! 🚀
+
+gigitnore
+📄 Complete .gitignore File
+Bhai, ye complete .gitignore file hai — Python + React + ML + Database sab ke liye. Copy karke apne project ke root folder mein .gitignore naam se save kar de.
+
+📥 Full .gitignore Content (Copy-Paste Ready)
+gitignore
+# ============================================
+# 🤖 FinAgent AI — .gitignore
+# Multi-Agent Financial Intelligence Platform
+# ============================================
+
+# ============================================
+# 🐍 Python
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+pythonenv*
+
+# ============================================
+# 🔐 Environment Variables (CRITICAL!)
+# ============================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+*.env
+!.env.example
+
+# ============================================
+# 🗄️ Database Files
+# ============================================
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+database/*.db
+backend/database/*.db
+
+# ============================================
+# 📊 Logs
+# ============================================
+*.log
+logs/
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+backend/logs/
+frontend/logs/
+
+# ============================================
+# ⚛️ Node / React / Vite
+# ============================================
+node_modules/
+dist/
+dist-ssr/
+build/
+.vite/
+.cache/
+.parcel-cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+coverage/
+*.local
+.vite-inspect/
+
+# ============================================
+# 🧠 ML Models & Large Files
+# ============================================
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.pb
+*.onnx
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.model
+*.bin
+models/
+backend/ml/models/
+backend/models_saved/
+*.tflite
+
+# ============================================
+# 📁 Data & Temporary Files
+# ============================================
+uploads/
+tmp/
+temp/
+.cache/
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+
+# ============================================
+# 📄 Generated Reports
+# ============================================
+reports/generated/
+*.pdf
+!docs/**/*.pdf
+backend/reports/*.pdf
+backend/reports/*.csv
+exports/
+
+# ============================================
+# 💻 IDE & Editor
+# ============================================
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json.example
+.idea/
+*.iml
+*.ipr
+*.iws
+.sublime-project
+.sublime-workspace
+*.code-workspace
+.history/
+*.sublime-*
+
+# ============================================
+# 🖥️ OS Files
+# ============================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ============================================
+# 🧪 Testing & Coverage
+# ============================================
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+coverage.xml
+*.cover
+nosetests.xml
+.tox/
+.nox/
+
+# ============================================
+# 🚀 Deployment
+# ============================================
+.vercel
+.netlify
+.firebase/
+.heroku/
+Dockerfile.local
+docker-compose.override.yml
+
+# ============================================
+# 📦 Package Managers
+# ============================================
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+poetry.lock
+Pipfile.lock
+
+# ============================================
+# 🎨 Build Artifacts
+# ============================================
+*.tsbuildinfo
+.eslintcache
+.stylelintcache
+
+# ============================================
+# 🔧 Misc
+# ============================================
+*.pid
+*.seed
+*.pid.lock
+.cache/
+node_modules/
+jspm_packages/
+
+# ============================================
+# 🎯 Project Specific
+# ============================================
+# Keep these files (don't ignore)
+!.env.example
+!README.md
+!LICENSE
+!.gitignore
+!requirements.txt
+!package.json
+📌 Har Section Ka Matlab (Brief Explanation)
+Section	Kya Ignore Karta Hai	Kyun
+🐍 Python	__pycache__, .pyc, venv/	Compiled files + virtual env
+🔐 Env	.env files	API keys safe rakhne ke liye! ⚠️
+🗄️ Database	*.db, *.sqlite	Local data (repo mein nahi chahiye)
+📊 Logs	*.log, logs/	Auto-generated, temporary
+⚛️ Node/React	node_modules/, dist/, .vite/	Heavy folders, regenerate ho jaate hain
+🧠 ML Models	*.pkl, *.h5, *.pt	Large files (100MB+)
+📁 Temp	tmp/, uploads/	Temporary data
+📄 Reports	*.pdf (generated)	Auto-generated reports
+💻 IDE	.vscode/, .idea/	Personal editor settings
+🖥️ OS	.DS_Store, Thumbs.db	OS-specific junk files
+🧪 Testing	.pytest_cache/, .coverage	Test artifacts
+🚀 Deployment	.vercel, .netlify	Deployment configs
+📦 Locks	package-lock.json, yarn.lock	(Optional — kuch teams commit karti hain)
+⚠️ IMPORTANT — ! Exception Ka Matlab
+Lines jo ! se shuru hoti hain, wo exception hain — matlab "ignore na karo":
+
+gitignore
+!.env.example       # .env.example commit karo, .env nahi
+!README.md          # README.md commit karo
+!requirements.txt   # Dependencies list commit karo
+🎯 Kaise Use Kare:
+Option 1: CMD Se (Windows)
+cmd
+cd C:\Users\YourName\Desktop\financial-intelligence-platform
+type nul > .gitignore
+notepad .gitignore
+Phir upar wala content paste karo aur save karo (Ctrl + S).
+
+Option 2: VS Code Se (Best) ⭐
+cmd
+code .gitignore
+Paste karo aur save karo.
+
+Option 3: Direct
+Project folder mein right-click → New → Text Document → Rename to .gitignore (dot ke saath, extension hatao).
+
+✅ Verify Karo Ki Sahi Kaam Kar Raha Hai
+.gitignore banane ke baad, ye command chalao:
+
+cmd
+git status
+Ye cheezein NAHI dikhni chahiye:
+
+❌ venv/ ya .venv/
+
+❌ node_modules/
+
+❌ .env ⚠️ (ye sabse important!)
+
+❌ __pycache__/
+
+❌ *.db (database files)
+
+❌ *.log (log files)
+
+Ye cheezein DIKHNI chahiye:
+
+✅ backend/
+
+✅ frontend/
+
+✅ README.md
+
+✅ .gitignore
+
+✅ .env.example
+
+✅ requirements.txt
+
+✅ package.json
+
+🚨 Agar Galti Se .env Ya venv/ Add Ho Gaya Ho
+Kabhi kabhi git add . chalane se pehle .gitignore nahi hota, aur .env ya venv/ stage ho jaate hain. Fix:
+
+cmd
+# Remove from staging (files delete nahi honge)
+git rm -r --cached venv/
+git rm -r --cached node_modules/
+git rm --cached .env
+
+# Ab wapas add karo
+git add .
+git commit -m "Add .gitignore and remove sensitive files"
+git push
+📋 Cheat Sheet: Kya Commit Karna, Kya Nahi
+✅ Commit Karo	❌ Commit Nahi Karo
+requirements.txt	venv/
+package.json	node_modules/
+.env.example	.env ⚠️
+README.md	*.log
+Source code (*.py, *.jsx)	__pycache__/
+SQL schema files	*.db
+Config templates	.vscode/
+Tests	dist/, build/
+Docs	*.pkl, *.h5
+.gitignore	.DS_Store
+🎁 Bonus: Ek Chota Version (Agar Upar Wala Zyada Lage)
+Agar tujhe short version chahiye (bas essential), to ye use kar:
+
+gitignore
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+env/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# Node / React
+node_modules/
+dist/
+build/
+.vite/
+
+# ML
+*.pkl
+*.h5
+*.pt
+*.joblib
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Keep these
+!.env.example
+🎯 Next Steps:
+✅ .gitignore file banao (upar wala content paste karo)
+
+✅ git status chalao — verify karo sahi files ignore ho rahi hain
+
+✅ git add . → git commit → git push
+
+✅ GitHub pe refresh karke dekho
+
+🔥 Bonus: Aur Bhi Files Chahiye?
+Bhai, ab bata — ye bhi chahiye kya?
+
+LICENSE file (MIT license text) — GitHub pe "MIT" badge ke liye
+
+.env.example file — Backend + Frontend ke liye template
+
+requirements.txt — Backend Python dependencies
+
+package.json — Frontend dependencies
+
+Actual code — Backend main.py, agents, services...
+
+Bata, main aage badhta hoon! 🚀
+
+Aur agar koi confusion ho ya error aaye to screenshot bhej — main solve kar dunga! 💪
+
+
